@@ -31,7 +31,10 @@
                             name:'Ming',
                             gender:'boy'
                         },
-                    ]
+                    ],
+                    data:''
+
+    
                     
                 },
 
@@ -97,6 +100,18 @@
 
 
         </div>
+
+        <!-- 数据双向绑定  v-model -->
+
+        <div>
+            <!-- 单输入框 -->
+            <!-- <input type="text" v-model='data' > -->
+            <!-- <p>{{data}}</p> -->
+            <!-- 多文本输入框 -->
+            <textarea v-model='data'> </textarea>
+            <p>{{data}}</p>
+        </div>
+
        
 
 
