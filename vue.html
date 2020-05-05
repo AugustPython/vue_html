@@ -38,11 +38,25 @@
     
                     
                 },
+                // 生命周期函数
+                created:function(){
+                    alert('created')
+                },
+                mounted:function(){
+                    alert('mounted')
+                },
 
                 // 定义方法
                 methods:{
                     AddNum:function(){
                         this.count+=1
+                    },
+                    AddData:function(){
+                        //输入到浏览器得终端
+                        console.log(a)
+                        let a = 10
+                        
+
                     }
                 }
             })
@@ -130,7 +144,10 @@
                 <option value="恐怖">恐怖</option>
             </select>
             <p>{{data}}</p>
+ 
         </div>
+
+        <button @click='AddData'>点击</button>
 
        
 
