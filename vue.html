@@ -14,7 +14,15 @@
                 // 定义绑定数据
                 data:{
                     name:'Python',
-                    url:'http://www.baidu.com'
+                    url:'http://www.baidu.com',
+                    count:0
+                },
+
+                // 定义方法
+                methods:{
+                    AddNum:function(){
+                        this.count+=1
+                    }
                 }
             })
         }
@@ -33,6 +41,14 @@
             <!-- 简写 -->
             <a :href="url">百度链接2</a>
         </div>
+        <div>
+            <!-- 事件绑定  v-on  -->
+            <!-- <button v-on:click='AddNum'>{{count}}</button> -->
+            <!-- 简写 -->
+            <button @click='AddNum'>{{count}}</button>
+        </div>
+       
+
 
     </div>
     
